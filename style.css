@@ -6,82 +6,194 @@ body {
 }
 
 /* NAVIGATION */
-ul {
-    background-color: rgb(152, 152, 245);
+#main-nav ul {
     display: flex;
     justify-content: center;
-    list-style: none;
-    gap 2em;
-    height: 20px;
     align-items: center;
-    font-size: 1.5em;
-    align-items: center;
-    -webkit-text-fill-color: white;
-    text-decoration: none;
-    gap: 2em;
+    list-style-type: none;
+    background-color: #00a8ff;
     height: 80px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#main-nav li a {
+    display: flex;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    padding: 40px;
+    font-size: 120%;
+}
+
+#main-nav li {
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+#main-nav li:hover {
+    transform: scale(1);
+    transition: 0.25s;
+}
+
+#main-nav li a:hover {
+    background-color: #0097e6;
 }
 
 /* HEADER */
-header {
-    background-color: black;
+#main-header {
+    background-image: url("../images/jason-dent-itA0ybdIDTs-unsplash.jpg");
+    height: 400px;
+    background-size: 100% 100%;
+
     color: white;
+    display: flex;
     justify-content: center;
-    align-items: centers;
-    text-align: center;
-    font-size: 40px;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 20px;
 }
 
-header button {
-    align-items: center;
-    background-color: #353b48;
-    text-align: center;
+h1 {
+    padding: 10px;
+    font-size: 60px;
+}
+
+h2 {
+    padding: 20px;
+    font-size: 48px;
+}
+
+#main-header button {
+    width: 200px;
+    height: 100px;
+    border: none;
+    font-size: 35px;
     color: white;
-    font-size: .8em;
-    justify-content: center;
-    width: 6em;
-    height: 3em;
+    background-color: #2c3241;
+}
+
+#main-header button:hover {
+    transform: scale(1);
+    transition: 1s;
+    background-color: #0595e2;
 }
 
 /* MAIN CONTENT */
+#main-content {
+    background-color: white;
+    flex-direction: row-reverse;
+    display: flex;
 
+
+}
 
 /* MAIN */
 main {
-    width: 60%;
-    background-color: white;
-    float: right;
+    margin-top: 20px;
+    flex: 60%;
 }
 
-figure {
-    height: 250px;
-    width: 250px;
+#figure-one {
+    width: 200px;
+    height: 200px;
+    float: left;
+    margin: 10px;
+
+}
+
+cite a:hover {
+    color: #0e9ce9;
+}
+
+cite a {
+
+    text-decoration: none;
+}
+
+
+#figure-two {
+
+    width: 200px;
+    height: 200px;
+    float: left;
+    margin: 10px;
+
 }
 
 /* ASIDE */
-aside h2{
-    font-size: 50px;
+aside h2 {
     color: white;
-    background-color: blueviolet;
-    float: bottom;
-    text-align: center;
-    display: flex;
+    margin-top: 30px;
+
+    background-color: #00a8ff;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
 }
+
+aside {
+    flex: 40%;
+    margin-right: 60px;
+    margin-left: 20px;
+    margin-bottom: 80px;
+}
+
+aside li {
+    padding: 25px;
+}
+
+aside li:nth-child(n) {
+    background-color: white;
+}
+
+aside li:nth-child(2n) {
+    background-color: white;
+
+}
+
+aside strong {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 150%;
+}
+
 /* FOOTER */
+
 footer {
-    
-      font-size: 15px;
-      display: flex;
-      justify-content: center;
-      position: absolute;
-      bottom: 0;
-      left 0;
-    
-    background-image: url('/images/jason-dent-itA0ybdIDTs-unsplash.jpg');
+    background-image: url("../images/jason-dent-itA0ybdIDTs-unsplash.jpg");
+    height: 250px;
 }
-footer p{
+
+#logo {
+    background-color: white;
+    width: 120px;
+    height: 120px;
+    transform: rotate(45deg);
+    margin-left: 100px;
+    margin-top: 30px;
+    border-radius: 25px;
+}
+
+#main-footer-content {
+    display: flex;
+    justify-content: center;
     text-align: left;
-      
-     
-      
+    color: white;
+    font-size: 110%;
+    padding: 30px;
+}
+
+footer p {
+    color: white;
+    display: flex;
+    justify-content: center;
+
 }
